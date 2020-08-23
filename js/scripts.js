@@ -29,6 +29,8 @@ var akanNames = function (year, month, day, gender) {
   }
 };
 
+//________________________________________________________________________________________________________
+
 //Introducing the front end logic by introducing the $( document ).ready() block
 
 $(document).ready(function() { // Line one- We use  the $ convention instead of Jquery 
