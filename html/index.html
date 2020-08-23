@@ -24,14 +24,11 @@
       your gender, shows your Akan Name. Read more about Akan names <a href="https://en.wikipedia.org/wiki/Akan_names " target="_blank" >here </a>
       </div>
     </div>
-
-    <form align= "center">
+<h1 class="test">Enter Date, Month and Year of birth</h1>
+    <form id="answers" align= "center">
       <label for="birthday">Birthday:</label>
       <input type="date" id="birthday" name="birthday">
-      <input type="submit" value="Submit">
     </form>
-
-
       <h1>Please Pick Gender</h1>
 <div class="myDiv">
 <form>
@@ -39,10 +36,21 @@
   <label for="male">Male</label><br>
   <input type="radio" id="female" name="gender" value="female">
   <label for="female">Female</label><br>
-  <input type="submit" value="Submit">
 </form> 
 </div>
-    <script
+
+<button onclick="az()"> Submit </button>
+    
+
+
+<script>
+  function az() {
+    var x = document.getElementById("test").innerHTML;
+    document.getElementById("answers").innerHTML =x
+  };
+  </script>
+
+<script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
@@ -57,5 +65,6 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/scripts.js"></script>
   </body>
 </html>
