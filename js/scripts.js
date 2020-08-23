@@ -33,8 +33,9 @@ var akanNames = function (year, month, day, gender) {
 
 //Introducing the front end logic by introducing the $( document ).ready() block
 
-$(document).ready(function() { // Line one- We use  the $ convention instead of Jquery 
-  $("form#form").submit(function(event) { 
+$(document).ready(function () {
+  // Line one- We use  the $ convention instead of Jquery
+  $("form#form").submit(function (event) {
     event.preventDefault();
     var year = parseInt($("#year").val());
     var month = parseInt($("#month").val());
@@ -44,5 +45,5 @@ $(document).ready(function() { // Line one- We use  the $ convention instead of 
     alert("Your akan name is: " + result);
     //refresh page
     document.getElementById("form").reset();
-});
+  });
 });
