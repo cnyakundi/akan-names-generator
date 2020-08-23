@@ -24,29 +24,33 @@
       your gender, shows your Akan Name. Read more about Akan names <a href="https://en.wikipedia.org/wiki/Akan_names " target="_blank" >here </a>
       </div>
     </div>
-<h1 class="test">Enter Date, Month and Year of birth</h1>
+<h1 id="test">Enter Date, Month and Year of birth</h1>
     <form id="answers" align= "center">
-      <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday">
+      <label for="date">Date:</label>
+      <input type="number" id="date" name="date">
+      <label for="month">Month:</label>
+      <input type="number" id="month" name="month">
+        <label for="year">Year:</label>
+      <input type="number" id="year" name="year">
     </form>
       <h1>Please Pick Gender</h1>
 <div class="myDiv">
-<form>
-  <input type="radio" id="male" name="gender" value="male">
+<form id="gender">
+  <input type="radio" id="male" name="gender" checked="checked" value="male">
   <label for="male">Male</label><br>
   <input type="radio" id="female" name="gender" value="female">
   <label for="female">Female</label><br>
 </form> 
 </div>
-
 <button onclick="az()"> Submit </button>
-    
-
-
 <script>
   function az() {
     var x = document.getElementById("test").innerHTML;
-    document.getElementById("answers").innerHTML =x
+    var date = document.getElementById("date").value;
+    var month = document.getElementById("month").value;
+    var year = document.getElementById("year").value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    inputs(date, month, year,gender)
   };
   </script>
 
@@ -65,6 +69,6 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
-  <script src="/js/scripts.js"></script>
+  <script src="../js/scripts.js"></script>
   </body>
 </html>
