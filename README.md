@@ -1,14 +1,16 @@
 # Akan Names Generator 
-##Author
-Cyprian Nyakundi
+## Author
+#Cyprian Nyakundi
 
 Project description
-This project is meant to give more information about me and my hobbies and why I decided to learn how to code
+This project is meant to show users their Akan Names
 
-Technologies Used
-HTML
-CSS
-Support and Contact details
+# Technologies Used
+- HTML
+- CSS
+- Javascript
+# Support and Contact details
+
 For any difficulties accessing the code, comments, concerns, ideas or any form of questions. Kindly contact me at cypriannyakundi@gmail.com
 
 copyright and license information
